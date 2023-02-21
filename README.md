@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Algunos comandos utiles si deciden correrlo en su compu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Se creo con [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
