@@ -1,11 +1,7 @@
   import React, { Component } from "react";
-  import { Link } from "react-router-dom"; //ChatGPT 
+  
   import { randomWord } from './words';
   
-  import Dashboard from './Dashboard'; // Importa el componente Dashboard
-  //import { useHistory } from 'react-router-dom';
-  import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
   import "./Hangman.css";
 
   import img0 from "./images/0.jpg";
