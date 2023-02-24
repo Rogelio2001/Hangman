@@ -11,7 +11,28 @@ import img4 from "./images/4.jpg";
 import img5 from "./images/5.jpg";
 import img6 from "./images/6.jpg";
 
+recibirVariable();
+function recibirVariable(variable) {
+  console.log('La variable recibida es: ' + variable);
+  // Haz algo con la variable recibida...
+}
+
+
  export class Hangman extends Component  {
+
+
+
+
+  //recibir nombre
+  recibirNombre(nombre){
+    var Hangman = {
+      recibirNombre: function(nombre) {
+        console.log("Nombre recibido: " + nombre);
+        // Haz algo con el nombre recibido...
+      }
+    }
+    
+  }
    
   /** by default, allow 6 guesses and use provided gallows images. */
   static defaultProps = {
@@ -115,6 +136,8 @@ import img6 from "./images/6.jpg";
       }
 
       <button id='reset' onClick={this.resetGame}>Reset Game</button>
+      {/* <button id='dash' onClick={this.Dashboard}>Dashboard</button> */}
+      <button id= 'dash' onClick={() => window.location.href='./Dashboard.jsx'}>Ir al Dashboard</button>
       </div>
     );
   }

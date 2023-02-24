@@ -4,6 +4,7 @@ import './LoginForm.css';
 import Hangman from './Hangman';
 import Dashboard from './Dashboard';
 
+
 function LoginForm() {
   const [username, setUsername] = useState('');
   const [loggedIn, setLoggedIn] = useState(false);
@@ -27,6 +28,7 @@ function LoginForm() {
 
   // Si el usuario ha iniciado sesión correctamente, muestra el componente Hangman
   if (loggedIn) {
+    
     return <Hangman />;
   }
   if(DashboardIn){
@@ -35,6 +37,7 @@ function LoginForm() {
 
   // De lo contrario, muestra el formulario de inicio de sesión
   return (
+    
     <form className="login-form">
       <label htmlFor="username">Nombre:</label>
       <input type="text" id="username" value={username} onChange={handleUsernameChange} />
@@ -45,6 +48,12 @@ function LoginForm() {
       </div>
     </form>
   );
+}
+
+
+function enviarNombre() {
+  var nombre = document.getElementById("username").value;
+  Hangman.recibirNombre(nombre);
 }
 
 export default LoginForm;

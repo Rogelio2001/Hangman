@@ -48,7 +48,11 @@
 }
 
 #reset {
-  width: 60px;
+  width: fit-content;
+  background-color: green;
+}
+#dash {
+  width: fit-content;
   background-color: green;
 }
 
