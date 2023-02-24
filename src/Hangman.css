@@ -48,11 +48,16 @@
 }
 
 #reset {
-  width: 60px;
+  width: fit-content;
   background-color: green;
 }
 
-.Hangman button:hover {
+#dash{
+  width: fit-content;
+  background-color: #ff9800;
+}
+
+/* .Hangman button:hover {
   background-color: #ff9800;
 }
 
@@ -60,4 +65,4 @@
   background: #bdbdbd;
   color: #eeeeee;
   box-shadow: 0 6px #9e9e9e;
-}
+} */
